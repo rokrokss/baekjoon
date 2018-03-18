@@ -1,6 +1,7 @@
-N = input()
-N = int(N)
-arr = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+N = int(input())
+arr = []
+for i in range(0, 10):
+    arr.append(0)
 while True:
     arr[N % 10] += 1
     if N < 10:
