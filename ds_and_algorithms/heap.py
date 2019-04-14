@@ -35,6 +35,11 @@ class Heap():
         self.heap.append(item)
         self._inv_heapify(len(self.heap) - 1)
 
+    def min(self):
+        if not self.heap:
+            return None
+        return self.heap[0]
+
     def del_min(self):
         heap = self.heap
         last_element = heap.pop()
