@@ -42,4 +42,3 @@ for i in range(n):
 ans = 2*n*len(houses)
 dfs(m, 0, [])
 print(ans)
-

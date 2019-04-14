@@ -92,4 +92,3 @@ while not (q.empty() or found):
         if next_depth < 10 and not visit[next_rx][next_ry][next_bx][next_by]:
             q.enqueue(Status(next_depth, next_rx, next_ry, next_bx, next_by))
 print(ans)
-

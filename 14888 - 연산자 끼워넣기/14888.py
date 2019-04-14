@@ -25,4 +25,3 @@ a, s, m, d = map(int, read().split())
 dfs_calculate(numbers[0], 1, a, s, m, d)
 print(max_ans)
 print(min_ans)
-

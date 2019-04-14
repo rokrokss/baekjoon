@@ -21,4 +21,3 @@ for _ in range(t):
     n -= 1
     m -= 1
     print(solution(n, m))
-

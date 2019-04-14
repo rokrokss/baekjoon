@@ -58,3 +58,4 @@ for _ in range(t):
             print(-1)
         else:
             print(q.back())
+

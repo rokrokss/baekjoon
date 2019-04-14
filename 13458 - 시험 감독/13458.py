@@ -12,4 +12,3 @@ for cnt in candidates:
     if cnt > 0:
         result += -(-cnt // c)
 print(result)
-

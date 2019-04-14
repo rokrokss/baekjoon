@@ -100,4 +100,3 @@ for i in range(n):
     for j in range(n):
         ans += trees[i][j].length
 print(ans)
-
