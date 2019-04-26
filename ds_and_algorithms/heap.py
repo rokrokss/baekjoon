@@ -12,20 +12,21 @@ class Heap():
         if length == 1:
             return
         parent = parent_index
-        while 2 * parent < length:
-            child = 2 * parent
+        child = 2 * parent + 1
+        while child < length:
             if child + 1 < length and compare(heap[child + 1], heap[child]):
                 child += 1
             if compare(heap[parent], heap[child]):
                 return
             heap[parent], heap[child] = heap[child], heap[parent]
             parent = child
+            child = 2 * parent + 1
 
     def _inv_heapify(self, child_index):
         heap, compare = self.heap, self.compare
         child = child_index
         while child > 0:
-            parent = child // 2
+            parent = (child - 1) // 2
             if compare(heap[parent], heap[child]):
                 return
             heap[parent], heap[child] = heap[child], heap[parent]
