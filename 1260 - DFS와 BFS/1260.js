@@ -28,14 +28,8 @@ Queue.prototype.dequeue = function() {
   return tmp;
 };
 
-var PriorityQueue = function() {
-  this.head = null;
-};
-
-PriorityQueue.prototype.is_empty = function() {
-  return !this.head;
-};
-
+var PriorityQueue = function() {};
+PriorityQueue.prototype = Object.create(Queue.prototype);
 PriorityQueue.prototype.enqueue = function(data) {
   var node = new Node(data);
   if (this.is_empty()) {
@@ -56,12 +50,6 @@ PriorityQueue.prototype.enqueue = function(data) {
     }
     cur.next = node;
   }
-};
-
-PriorityQueue.prototype.dequeue = function(data) {
-  var tmp = this.head;
-  this.head = tmp.next;
-  return tmp;
 };
 
 var dfs = function(v, adj, visited) {
