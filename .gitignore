@@ -3,4 +3,7 @@
 .DS_Store
 test.py
 .swp
-
+package-lock.json
+node_modules
+.babelrc
+*.es5.js
