@@ -18,7 +18,7 @@ function _quickSort(arr, start, end) {
       }
     }
     [arr[store_idx], arr[end]] = [arr[end], arr[store_idx]];
-    _quickSort(arr, start, store_idx);
+    _quickSort(arr, start, store_idx - 1);
     _quickSort(arr, store_idx + 1, end);
   }
 }
