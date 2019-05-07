@@ -8,3 +8,5 @@ node_modules
 .babelrc
 *.es5.js
 package.json
+*.exe
+
