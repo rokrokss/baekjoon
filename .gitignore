@@ -9,4 +9,5 @@ node_modules
 *.es5.js
 package.json
 *.exe
-
+META-INF
+out.jar
